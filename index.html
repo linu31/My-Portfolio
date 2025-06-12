@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <nav class="navbar">
+    <h1>Linu Priyanth's Portfolio</h1>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="home" class="home">
+    <h1>👋 Hi, I'm <span class="highlight">Linu Priyanth</span></h1>
+    <p>I'm a passionate <span style="color:#3b82f6;">Full Stack Developer</span> who loves building web apps from the ground up. With strong skills in Java, Spring Boot, and Python, I enjoy working on both the backend logic and the frontend design. Whether it's building REST APIs or crafting clean UIs, I'm always excited to create something powerful, scalable, and user-focused. I follow (Build Break Improve) My goal is to build applications that not only work seamlessly but also deliver meaningful value to users!</p>
+    <a href="#about">Explore More</a>
+  </section>
+
+  <section id="about" class="about">
+    <img src="./assets/linu4.jpg" alt="Profile" data-aos="fade-left" />
+    <div class="about-content" data-aos="fade-right">
+      <h2>About Me</h2>
+      <p>
+        An Aspiring computer science engineer Currently pursuing III B.Tech at Vignan's Foundation for Science, Technology and Research with a strong interest in software development and emerging technologies.
+        Passionate about coding, problem-solving, and creating innovative tech solutions.
+        Skilled in Java, Python, Spring Boot, and React, with hands-on experience in full-stack development.
+        Actively exploring AI, machine learning, and cloud computing.
+        Quick learner with a collaborative mindset and a drive to keep growing.
+        Looking forward to opportunities that challenge me and help me make a real-world impact.
+        Always excited to connect, learn, and contribute! My strengths lie in
+        <strong style="color:#3b82f6;">React.js, Node.js, Java, Python</strong>, and more.
+      </p>
+      <a href="./resume.pdf" download>Download Resume</a>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2 data-aos="fade-down">My Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card project-1" data-aos="fade-up" data-aos-delay="100">
+        <div class="project-image"></div>
+        <div class="project-content">
+          <h3>AI Chatbot App</h3>
+          <p>React + Python-based chatbot using Gemini API with full chat UI that provides intelligent responses to user queries.</p>
+          <div class="tech-stack">
+            <span class="tech">React</span>
+            <span class="tech">Python</span>
+            <span class="tech">Flask</span>
+            <span class="tech">Gemini API</span>
+          </div>
+          <a href="https://github.com/linu31/AI-CHATBOT.git" target="_blank" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      
+      <div class="project-card project-2" data-aos="fade-up" data-aos-delay="200">
+        <div class="project-image"></div>
+        <div class="project-content">
+          <h3>Smart Irrigation System</h3>
+          <p>IoT system using Arduino + Node.js to monitor real-time data for soil moisture, temperature and humidity with automated controls.</p>
+          <div class="tech-stack">
+            <span class="tech">Arduino</span>
+            <span class="tech">Node.js</span>
+            <span class="tech">IoT</span>
+            <span class="tech">HTML/CSS</span>
+          </div>
+          <a href="https://github.com/linu31/Smart-Irrigation-System-Using-Iot.git" target="_blank" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      
+      <div class="project-card project-3" data-aos="fade-up" data-aos-delay="300">
+        <div class="project-image"></div>
+        <div class="project-content">
+          <h3>Music Genre Classifier</h3>
+          <p>A platform where users can upload lyrics, cover images, and music files for sentiment analysis and genre classification.</p>
+          <div class="tech-stack">
+            <span class="tech">Python</span>
+            <span class="tech">Machine Learning</span>
+            <span class="tech">NLP</span>
+          </div>
+          <a href="https://github.com/linu31/Music-Genre-classifier.git" target="_blank" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2 data-aos="fade-down">My Skills</h2>
+    <div class="skills-container">
+      <div class="skill-item" data-aos="zoom-in" data-aos-delay="100">
+        <i class="fab fa-react"></i>
+        <p>React</p>
+      </div>
+      <div class="skill-item" data-aos="zoom-in" data-aos-delay="200">
+        <i class="fab fa-node-js"></i>
+        <p>Node.js</p>
+      </div>
+      <div class="skill-item" data-aos="zoom-in" data-aos-delay="300">
+        <i class="fab fa-python"></i>
+        <p>Python</p>
+      </div>
+      <div class="skill-item" data-aos="zoom-in" data-aos-delay="400">
+        <i class="fab fa-java"></i>
+        <p>Java</p>
+      </div>
+      <div class="skill-item" data-aos="zoom-in" data-aos-delay="500">
+        <i class="fab fa-html5"></i>
+        <p>HTML5</p>
+      </div>
+      <div class="skill-item" data-aos="zoom-in" data-aos-delay="600">
+        <i class="fab fa-css3-alt"></i>
+        <p>CSS3</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2 data-aos="fade-down">Get In Touch</h2>
+    <form onsubmit="sendMessage(event)" data-aos="fade-up">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="footer-icons">
+      <a href="https://github.com/linu31" target="_blank" data-aos="zoom-in" data-aos-delay="100"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/karukutla-linu-priyanth-346067342" target="_blank" data-aos="zoom-in" data-aos-delay="200"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:linupriyanth418@gmail.com" data-aos="zoom-in" data-aos-delay="300"><i class="fas fa-envelope"></i></a>
+    </div>
+    <p>&copy; <span id="year"></span> Karukutla Linu Priyanth. All rights reserved.</p>
+  </footer>
+
+  <script src="./index.js"></script>
+</body>
+</html>
