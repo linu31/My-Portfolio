@@ -9,7 +9,7 @@ This project showcases my professional background, skills, projects, and resume 
 
 👉 [View Live Portfolio on vercel](https://my-portfolio-jade-five-44.vercel.app/
 )  
-Replace the above link with your actual deployed Netlify URL.
+Replace the above link with your actual deployed vercel URL.
 
 ---
 
