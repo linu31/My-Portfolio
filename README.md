@@ -7,7 +7,8 @@ This project showcases my professional background, skills, projects, and resume 
 
 ## 🔗 Live Demo
 
-👉 [View Live Portfolio on Netlify](https://your-netlify-link-here.netlify.app)  
+👉 [View Live Portfolio on vercel](https://my-portfolio-jade-five-44.vercel.app/
+)  
 Replace the above link with your actual deployed Netlify URL.
 
 ---
@@ -19,7 +20,7 @@ Replace the above link with your actual deployed Netlify URL.
 - CSS3
 - JavaScript (Vanilla)
 - Responsive Web Design
-- [Netlify](https://www.netlify.com/) for deployment
+- [vercel](https://www.vercel.com/) for deployment
 
 ---
 
