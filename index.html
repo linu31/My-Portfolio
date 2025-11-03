@@ -6,16 +6,21 @@
   <title>My Portfolio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./index.css">
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 </head>
 <body>
   <nav class="navbar">
     <h1>Linu Priyanth's Portfolio</h1>
+    <button class="theme-toggle" id="theme-toggle" onclick="toggleTheme()">
+      🌙
+    </button>
     <ul>
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#skills">Skills</a></li>
+      <li><a href="#certifications">Certificates</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -31,7 +36,7 @@
     <div class="about-content" data-aos="fade-right">
       <h2>About Me</h2>
       <p>
-        An Aspiring computer science engineer Currently pursuing III B.Tech at Vignan's Foundation for Science, Technology and Research with a strong interest in software development and emerging technologies.
+        An Aspiring computer science engineer Student Currently pursuing III B.Tech at Vignan's Foundation for Science, Technology and Research with a strong interest in software development and emerging technologies.
         Passionate about coding, problem-solving, and creating innovative tech solutions.
         Skilled in Java, Python, Spring Boot, and React, with hands-on experience in full-stack development.
         Actively exploring AI, machine learning, and cloud computing.
@@ -40,7 +45,7 @@
         Always excited to connect, learn, and contribute! My strengths lie in
         <strong style="color:#3b82f6;">React.js, Node.js, Java, Python</strong>, and more.
       </p>
-      <a href="./resume.pdf" download>Download Resume</a>
+      <a href="./assets/resume_2.pdf" download>Download Resume</a>
     </div>
   </section>
 
@@ -61,7 +66,7 @@
           <a href="https://github.com/linu31/AI-CHATBOT.git" target="_blank" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
-      
+
       <div class="project-card project-2" data-aos="fade-up" data-aos-delay="200">
         <div class="project-image"></div>
         <div class="project-content">
@@ -76,71 +81,293 @@
           <a href="https://github.com/linu31/Smart-Irrigation-System-Using-Iot.git" target="_blank" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
-      
+
       <div class="project-card project-3" data-aos="fade-up" data-aos-delay="300">
         <div class="project-image"></div>
         <div class="project-content">
           <h3>Music Genre Classifier</h3>
-          <p>A platform where users can upload lyrics, cover images, and music files for sentiment analysis and genre classification.</p>
+          <p>A stream lit web application. where users can upload lyrics, cover images, and music files for sentiment analysis and genre classification.so that the results will be visualized in graphs.</p>
           <div class="tech-stack">
             <span class="tech">Python</span>
-            <span class="tech">Machine Learning</span>
-            <span class="tech">NLP</span>
+            <span class="tech">Deep Learning</span>
+            <span class="tech">NLTK</span>
+            <span class="tech">Streamlit</span>
+            <span class="tech">Matplotlib</span>
+            <span class="tech">Librosa</span> 
           </div>
           <a href="https://github.com/linu31/Music-Genre-classifier.git" target="_blank" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="project-card project-8" data-aos="fade-up" data-aos-delay="300">
+        <div class="project-image"></div>
+        <div class="project-content">
+          <h3>Plant Disease Detection using Deep Learning (AI-based Image Classification)</h3>
+          <p>A stream lit web application. where users can upload the upload he leaf image and predict the output.</p>
+          <div class="tech-stack">
+            <span class="tech">Python</span>
+            <span class="tech">Deep Learning</span>
+            <span class="tech">TensorFlow</span>
+            <span class="tech">Keras</span>
+            <span class="tech">OpenCV</span>
+            <span class="tech">Streamlit</span>
+          </div>
+          <a href="https://github.com/linu31/plant-disease-detection.git" target="_blank" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="project-card project-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="project-image"></div>
+        <div class="project-content">
+          <h3>Personal Portfolio</h3>
+          <p>I developed a responsive portfolio website using HTML, CSS, and JavaScript to showcase my skills, projects, and achievements.</p>
+          <div class="tech-stack">
+            <span class="tech">HTML</span>
+            <span class="tech">CSS</span>
+            <span class="tech">JS</span>
+          </div>
+          <a href="https://github.com/linu31/my-portfolio.git" target="_blank" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      
+      <div class="project-card project-5" data-aos="fade-up" data-aos-delay="200">
+        <div class="project-image"></div>
+        <div class="project-content">
+          <h3>Online Proctoring System</h3>
+          <p>Designed a platform named Evaluator, used to conduct secure exams with live monitoring and teacher can add questions and find out plagarisms.</p>
+          <div class="tech-stack">
+            <span class="tech">React.js</span>
+            <span class="tech">Node.js</span>
+            <span class="tech">Mongo DB</span>
+            <span class="tech">Express.js</span>
+          </div>
+          <a href="https://github.com/linu31/online-proctoring-system.git" target="_blank" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      
+     <div class="project-card project-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="project-image"></div>
+        <div class="project-content">
+          <h3>Ecommerce Website</h3>
+          <p>Designed an E-commerce platforms that handles users, orders and bookings across various categories. </p>
+          <div class="tech-stack">
+            <span class="tech">HTML/CSS</span>
+            <span class="tech">Node.js</span>
+            <span class="tech">Javascript</span>
+            <span class="tech">Mongo DB</span>
+          </div>
+          <a href="https://github.com/linu31/Ecommerce-Website.git" target="_blank" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
     </div>
   </section>
 
   <section id="skills" class="skills">
-    <h2 data-aos="fade-down">My Skills</h2>
+    <h2 data-aos="fade-down">Technical Skills</h2>
     <div class="skills-container">
-      <div class="skill-item" data-aos="zoom-in" data-aos-delay="100">
-        <i class="fab fa-react"></i>
-        <p>React</p>
+      <!-- Technical Skills -->
+      <div class="skill-item"><i class="fab fa-html5"></i><p>HTML</p></div>
+      <div class="skill-item"><i class="fab fa-css3-alt"></i><p>CSS</p></div>
+      <div class="skill-item"><i class="fab fa-js-square"></i><p>JavaScript</p></div>
+      <div class="skill-item"><i class="fab fa-react"></i><p>React.js</p></div>
+      <div class="skill-item"><i class="fab fa-node-js"></i><p>Node.js</p></div>
+      <div class="skill-item"><i class="fab fa-java"></i><p>Java</p></div>
+      <div class="skill-item"><i class="fab fa-python"></i><p>Python</p></div>
+      <div class="skill-item"><i class="fas fa-leaf"></i><p>MongoDB</p></div>
+      <div class="skill-item"><i class="fas fa-database"></i><p>MySQL</p></div>
+      <div class="skill-item"><i class="fas fa-cloud"></i><p>Spring Boot</p></div>
+      <div class="skill-item"><i class="fas fa-code-branch"></i><p>Git & GitHub</p></div>
+      <div class="skill-item"><i class="fas fa-windows"></i><p>Windows</p></div>
+      <div class="skill-item"><i class="fas fa-terminal"></i><p>Linux</p></div>
+      <div class="skill-item"><i class="fas fa-envelope"></i><p>EmailJS</p></div>
+      <div class="skill-item"><i class="fas fa-sms"></i><p>Twilio</p></div>
+      <div class="skill-item"><i class="fas fa-paper-plane"></i><p>Postman</p></div>
+      <div class="skill-item">
+  	<img src="https://cdn.worldvectorlogo.com/logos/vercel.svg" alt="Vercel" class="custom-icon" />
+  	<p>Vercel</p>
       </div>
-      <div class="skill-item" data-aos="zoom-in" data-aos-delay="200">
-        <i class="fab fa-node-js"></i>
-        <p>Node.js</p>
+      <div class="skill-item">
+  	<img src="https://cdn.freebiesupply.com/logos/large/2x/netlify-logo-png-transparent.png" alt="Netlify" class="custom-icon" />
+  	<p>Netlify</p>
       </div>
-      <div class="skill-item" data-aos="zoom-in" data-aos-delay="300">
-        <i class="fab fa-python"></i>
-        <p>Python</p>
+      <div class="skill-item"><i class="fas fa-file-excel"></i><p>MS Excel</p></div>
+      <div class="skill-item"><i class="fas fa-file-word"></i><p>MS Word</p></div>
+    </div>
+
+    <h3 style="margin-top:2rem; color:#3b82f6">Non-Technical Skills</h3><br/>
+    <div class="skills-container">
+      <div class="skill-item"><i class="fas fa-users"></i><p>Team Leadership</p></div>
+      <div class="skill-item"><i class="fas fa-microphone"></i><p>Professional Speaking</p></div>
+      <div class="skill-item"><i class="fas fa-comments"></i><p>Communication</p></div>
+      <div class="skill-item"><i class="fas fa-lightbulb"></i><p>Problem Solving</p></div>
+      <div class="skill-item">
+  	<i class="fas fa-lightbulb creative-icon"></i>
+  	<p>Creativity</p>
+      </div>   
+      <div class="skill-item">
+ 	 <i class="fas fa-clock time-icon"></i>
+ 	 <p>Time Management</p>
       </div>
-      <div class="skill-item" data-aos="zoom-in" data-aos-delay="400">
-        <i class="fab fa-java"></i>
-        <p>Java</p>
+      <div class="skill-item">
+ 	 <i class="fas fa-brain thinking-icon"></i>
+ 	 <p>Critical Thinking</p>
       </div>
-      <div class="skill-item" data-aos="zoom-in" data-aos-delay="500">
-        <i class="fab fa-html5"></i>
-        <p>HTML5</p>
+      <div class="skill-item">
+	  <i class="fas fa-chess-king leadership-icon"></i>
+ 	 <p>Leadership</p>
       </div>
-      <div class="skill-item" data-aos="zoom-in" data-aos-delay="600">
-        <i class="fab fa-css3-alt"></i>
-        <p>CSS3</p>
+      <div class="skill-item">
+  	<i class="fas fa-sync-alt adaptability-icon"></i>
+  	<p>Adaptability</p>
       </div>
+      <div class="skill-item">
+  	<i class="fas fa-people-arrows teamwork-icon"></i>
+ 	 <p>Teamwork</p>
+      </div>
+    </div>
+
+    <h3 style="margin-top:2rem; color:#3b82f6">Other Skills</h3><br/>
+    <div class="skills-container">
+      <div class="skill-item"><i class="fas fa-baseball-ball"></i><p>Cricket</p></div>
+      <div class="skill-item"><i class="fas fa-futbol"></i><p>Football</p></div>
+      <div class="skill-item"><i class="fas fa-table-tennis"></i><p>Table Tennis</p></div>
+      <div class="skill-item"><i class="fas fa-basketball-ball"></i><p>Badminton</p></div>
+      <div class="skill-item"><i class="fas fa-camera"></i><p>Photography</p></div>
+    </div>
+
+    <h3 style="margin-top:2rem; color:#3b82f6">Hobbies</h3><br/>
+    <div class="skills-container">
+      <div class="skill-item"><i class="fas fa-gamepad"></i><p>Playing Cricket</p></div>
+      <div class="skill-item"><i class="fas fa-film"></i><p>Watching Anime</p></div>
+      <div class="skill-item"><i class="fas fa-globe"></i><p>Tech Browsing</p></div>
+      <div class="skill-item"><i class="fas fa-tv"></i><p>Watching Movies</p></div>
+      <div class="skill-item"><i class="fas fa-dumbbell"></i><p>Gym Workout</p></div>
     </div>
   </section>
 
-  <section id="contact" class="contact">
-    <h2 data-aos="fade-down">Get In Touch</h2>
-    <form onsubmit="sendMessage(event)" data-aos="fade-up">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+  <section id="certifications" class="projects">
+  <h2 data-aos="fade-down">My Certificates</h2>
+  <div id="certGrid" class="certifications-grid">
+    <div class="cert-card">
+      <h3>Generative AI</h3>
+      <p>Infosys Springboard</p>
+      <a href="./assets/infosys_genai.pdf" target="_blank" rel="noopener noreferrer" class="view-link">View →</a>
+    </div>
+    <div class="cert-card">
+      <h3>Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate</h3>
+      <p>Oracle</p>
+      <a href="./assets/oracle.pdf" target="_blank" rel="noopener noreferrer" class="view-link">View →</a>
+    </div>
+    <div class="cert-card">
+      <h3>Database Management System</h3>
+      <p>NPTEL</p>
+      <a href="./assets/Dbms.pdf" target="_blank" rel="noopener noreferrer" class="view-link">View →</a>
+    </div>
+    <div class="cert-card">
+      <h3>Principles Of Management</h3>
+      <p>NPTEL</p>
+      <a href="./assets/principles_of_management.pdf" target="_blank" rel="noopener noreferrer" class="view-link">View →</a>
+    </div>
+    <div class="cert-card">
+      <h3>Cybersecurity Essentials</h3>
+      <p>Vignan's Foundation for Science, Technology & Research (Cisco Networking Academy)</p>
+      <a href="./assets/jnrcs.pdf" target="_blank" rel="noopener noreferrer" class="view-link">View →</a>
+    </div>
+    <div class="cert-card">
+      <h3>Cloud Computing with AWS</h3>
+      <p>Vignan University</p>
+      <a href="./assets/aws.pdf" target="_blank" rel="noopener noreferrer" class="view-link">View →</a>
+    </div>
+    <div class="cert-card">
+      <h3>Getting Started with Cisco Packet Tracer</h3>
+      <p>Vignan's Foundation for Science, Technology & Research (Cisco Networking Academy)</p>
+      <a href="./assets/getting.pdf" target="_blank" rel="noopener noreferrer" class="view-link">View →</a>
+    </div>
+    <div class="cert-card">
+      <h3>Exploring Networking with Cisco Packet Tracer</h3>
+      <p>Vignan's Foundation for Science, Technology & Research (Cisco Networking Academy)</p>
+      <a href="./assets/exp.pdf" target="_blank" rel="noopener noreferrer" class="view-link">View →</a>
+    </div>
+    <div class="cert-card">
+      <h3>Frontend Development</h3>
+      <p>Orcade Hub</p>
+      <a href="./assets/frontend_dev.pdf" target="_blank" rel="noopener noreferrer" class="view-link">View →</a>
+    </div>
+    <div class="cert-card">
+      <h3>Bussiness Analytic Tools</h3>
+      <p>Guvi | HCL</p>
+      <a href="./assets/hcl.pdf" target="_blank" rel="noopener noreferrer" class="view-link">View →</a>
+    </div>
+    <div class="cert-card">
+      <h3>Web Development Internship</h3>
+      <p>Grad Guru | Executive81 HR Solutions</p>
+      <a href="./assets/two.pdf" target="_blank" rel="noopener noreferrer" class="view-link">View →</a>
+    </div>
+    <div class="cert-card hidden">
+      <h3>Google Interview Questions</h3>
+      <p>Codechef</p>
+      <a href="./assets/google.pdf" target="_blank" rel="noopener noreferrer" class="view-link">View →</a>
+    </div>
+    <div class="cert-card hidden">
+      <h3>SQL Intermediate Level</h3>
+      <p>Hacker Rank</p>
+      <a href="https://www.hackerrank.com/certificates/74d311049157" target="_blank" rel="noopener noreferrer" class="view-link">View →</a>
+    </div>
+    <div class="cert-card hidden">
+      <h3>Python Developer Internship</h3>
+      <p>StaxTech</p>
+      <a href="./assets/intern_1.pdf" target="_blank" rel="noopener noreferrer" class="view-link">View →</a>
+    </div>
+    <div class="cert-card hidden">
+      <h3>Cyber Security awareness</h3>
+      <p>HP Life</p>
+      <a href="./assets/hp_life_cybersecurity.pdf" target="_blank" rel="noopener noreferrer" class="view-link">View →</a>
+    </div>
+    <div class="cert-card hidden">
+      <h3>PET</h3>
+      <p>Cambridge Assessment English</p>
+      <a href="./assets/pet.pdf" target="_blank" rel="noopener noreferrer" class="view-link">View →</a>
+    </div>
+  </div>
+  <button id="viewMoreBtn" onclick="toggleCerts()">View More</button>
   </section>
+
+   <section id="contact" class="contact">
+  <h2 data-aos="fade-down">Get In Touch</h2>
+  <form id="contactForm" onsubmit="sendMessage(event)" data-aos="fade-up">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" placeholder="Your Message , and Mention your mail id here along with your message" rows="4" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
 
   <footer>
-    <div class="footer-icons">
-      <a href="https://github.com/linu31" target="_blank" data-aos="zoom-in" data-aos-delay="100"><i class="fab fa-github"></i></a>
-      <a href="https://linkedin.com/in/karukutla-linu-priyanth-346067342" target="_blank" data-aos="zoom-in" data-aos-delay="200"><i class="fab fa-linkedin"></i></a>
-      <a href="mailto:linupriyanth418@gmail.com" data-aos="zoom-in" data-aos-delay="300"><i class="fas fa-envelope"></i></a>
-    </div>
-    <p>&copy; <span id="year"></span> Karukutla Linu Priyanth. All rights reserved.</p>
-  </footer>
+  <div class="footer-icons">
+    <a href="https://github.com/linu31" target="_blank" data-aos="zoom-in" data-aos-delay="100">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://linkedin.com/in/karukutla-linu-priyanth-346067342" target="_blank" data-aos="zoom-in" data-aos-delay="200">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://leetcode.com/u/gFj43E1P9a/" target="_blank" data-aos="zoom-in" data-aos-delay="500">
+      <i class="fas fa-code"></i> 
+    </a>
+    <a href="https://www.codechef.com/users/linupriyanth31" target="_blank" data-aos="zoom-in" data-aos-delay="600">
+      <i class="fas fa-trophy"></i>
+    </a>
+    <a href="mailto:linupriyanth418@gmail.com" data-aos="zoom-in" data-aos-delay="300">
+      <i class="fas fa-envelope"></i>
+    </a>
+    <a href="https://instagram.com/classy_linu" target="_blank" data-aos="zoom-in" data-aos-delay="400">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://wa.me/917032565203" target="_blank" data-aos="zoom-in" data-aos-delay="500">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+  <p>&copy; <span id="year"></span> Karukutla Linu Priyanth. All rights reserved.</p>
+</footer>
 
   <script src="./index.js"></script>
 </body>
